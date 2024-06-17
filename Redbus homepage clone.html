@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redbus Homepage Clone</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: #dc3545;
+    color: #fff;
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .logo img {
+    height: 40px;
+    vertical-align: middle;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header nav ul li {
+    margin-left: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #ffc107;
+}
+
+.user-options {
+    margin-left: auto;
+}
+
+.user-options a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.user-options a:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    background-image: url('hero_bg.jpg');
+    background-size: cover;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+}
+
+.hero form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero form input {
+    padding: 10px;
+    margin: 0 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+}
+
+.hero form button {
+    padding: 10px 20px;
+    background-color: #dc3545;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.hero form button:hover {
+    background-color: #ffc107;
+}
+
+.services {
+    background-color: #fff;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.service-item {
+    margin-bottom: 30px;
+}
+
+.service-item img {
+    height: 80px;
+    margin-bottom: 20px;
+}
+
+.service-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.service-item p {
+    color: #666;
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer nav ul li {
+    margin: 0 10px;
+}
+
+footer nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer nav ul li a:hover {
+    color: #ffc107;
+}
+
+</style>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="redbus_logo.png" alt="Redbus Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Bus Tickets</a></li>
+                    <li><a href="#">Cancel Tickets</a></li>
+                    <li><a href="#">Hotels</a></li>
+                    <li><a href="#">Help</a></li>
+                </ul>
+            </nav>
+            <div class="user-options">
+                <a href="#">Sign In</a>
+                <a href="#">Sign Up</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container">
+                <h1>Book Bus Tickets Online</h1>
+                <p>Travel to your favorite destinations with Redbus. Hassle-free booking experience.</p>
+                <form action="#">
+                    <input type="text" placeholder="Enter source city">
+                    <input type="text" placeholder="Enter destination city">
+                    <button type="submit">Search Buses</button>
+                </form>
+            </div>
+        </section>
+
+        <section class="services">
+            <div class="container">
+                <div class="service-item">
+                    <img src="service_icon1.png" alt="Service Icon">
+                    <h2>24x7 Customer Support</h2>
+                    <p>Our customer care is available for you 24x7 for any queries.</p>
+                </div>
+                <div class="service-item">
+                    <img src="service_icon2.png" alt="Service Icon">
+                    <h2>Safe and Secure Payments</h2>
+                    <p>Secure and multiple payment options available.</p>
+                </div>
+                <div class="service-item">
+                    <img src="service_icon3.png" alt="Service Icon">
+                    <h2>Real-time Bus Tracking</h2>
+                    <p>Track your bus with our real-time bus tracking feature.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 akash-kumar-singh. All rights reserved.</p>
+            <nav>
+                <ul>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms of Use</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+</body>
+</html>
